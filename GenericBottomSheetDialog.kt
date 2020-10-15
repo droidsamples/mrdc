@@ -12,6 +12,8 @@ open class GenericBottomSheetDialog : DialogFragment() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
+        dialog?.window?.setBackgroundDrawable(ColorDrawable(Color.TRANSPARENT))
+        dialog?.window?.requestFeature(Window.FEATURE_NO_TITLE)
         setStyle(STYLE_NO_TITLE, R.style.CustomBottomSheetDialog)
     }
 
